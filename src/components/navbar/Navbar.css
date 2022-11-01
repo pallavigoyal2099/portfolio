@@ -16,6 +16,10 @@
     color: #FFECEF;
     font-size: 1.3rem;
     margin-left: 1rem;
+    
+  }
+  .brand-name img{
+    height: 2rem;
   }
   
   .navigation-menu {

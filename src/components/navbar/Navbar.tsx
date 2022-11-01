@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className="navigation">
-      <a href="/" className="brand-name">
-        Pallavi Goyal
-      </a>
+      <div className="brand-name">
+        <img src={process.env.PUBLIC_URL + "/portfolio-logo.png"} />
+      </div>
       <button
         className="hamburger"
         onClick={() => {
