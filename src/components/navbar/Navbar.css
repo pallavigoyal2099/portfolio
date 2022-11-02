@@ -5,55 +5,55 @@
     align-items: center;
     height: 4rem;
     width: 100%;
-    padding: 0.5rem 0rem;
+    padding:0;
     background-color: #372948;
+    line-height: 60px;
     color: white;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
-  
+
   .brand-name {
     text-decoration: none;
     color: #FFECEF;
     font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+justify-content: center;
     margin-left: 1rem;
-    
+
   }
   .brand-name img{
     height: 2rem;
   }
-  
+
   .navigation-menu {
     margin-left: auto;
   }
-  
+
   .navigation-menu ul {
     display: flex;
     padding: 0;
+    margin: 0;
   }
-  
+
   .navigation-menu li {
     list-style-type: none;
     margin: 0 1rem;
-  }
-  
-  .navigation-menu li a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    color: white;
-    padding-bottom: 0.2rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 6rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+justify-content: center;
     line-height: 2rem;
   }
+
+
   .navigation-menu li:hover {
-    border-bottom: 1px solid #FFCACA;
-    transition: all ease-in-out .2s;
-      }
-      
-  .navigation-menu li:hover {
-border-bottom: 1px solid #FFCACA;
-transition: all ease-in-out .2s;
+background-color: #2a2135;
   }
-  
+
   .hamburger {
     border: 0;
     height: 40px;
@@ -69,16 +69,16 @@ transition: all ease-in-out .2s;
     transform: translateY(-50%);
     display: none;
   }
-  
+
   .hamburger:hover {
     background-color: #2642af;
   }
-  
+
   @media screen and (max-width: 550px) {
     .hamburger {
       display: block;
     }
-  
+
     .navigation-menu ul {
       flex-direction: column;
       position: absolute;
@@ -90,24 +90,23 @@ transition: all ease-in-out .2s;
       border-top: 1px solid black;
       display: none;
     }
-  
+
     .navigation-menu li {
       text-align: center;
       margin: 0;
     }
-  
+
     .navigation-menu li a {
       color: black;
       width: 100%;
       padding: 1.5rem 0;
     }
-  
+
     .navigation-menu li:hover {
       background-color: #eee;
     }
-  
+
     .navigation-menu.expanded ul {
       display: block;
     }
   }
-  

@@ -1,4 +1,97 @@
-.dashboard{
-    margin: 5rem 0;
-    background: #251B37;
+.dashboard {
+  margin: 4rem 0;
+  background: #251b37;
+}
+.about-me-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+.about-me-main-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5rem;
+}
+.about-me-main-content h1 {
+  color: #ffcaca;
+}
+.about-me-main-content h3 {
+  color: #ffecef;
+}
+.about-me-image {
+  padding: 1rem;
+}
+.about-me-image img {
+  height: 22rem;
+}
+.about-me-buttons {
+  display: flex;
+  padding: 1rem 0;
+}
+.default-button {
+  background: transparent;
+  border: 1px solid #ffcaca;
+  color: #ffcaca;
+  transition: all 0.5s ease-in-out;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.primary-button {
+  background-color: #ffcaca;
+  color: #251b37;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  transition: all 0.3s ease-in;
+}
+.default-button:hover {
+  background: hsla(267, 27%, 22%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(267, 27%, 22%, 1) 0%,
+    hsla(0, 100%, 90%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(267, 27%, 22%, 1) 0%,
+    hsla(0, 100%, 90%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(267, 27%, 22%, 1) 0%,
+    hsla(0, 100%, 90%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#372948", endColorstr="#FFCACA", GradientType=1 );
+  color: #251b37;
+}
+.primary-button:hover {
+  color: #251b37;
+  background: hsla(267, 27%, 22%, 1);
+  background: linear-gradient(
+    45deg,
+    hsla(267, 27%, 22%, 1) 0%,
+    hsla(0, 100%, 90%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(267, 27%, 22%, 1) 0%,
+    hsla(0, 100%, 90%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(267, 27%, 22%, 1) 0%,
+    hsla(0, 100%, 90%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#372948", endColorstr="#FFCACA", GradientType=1 );
 }
