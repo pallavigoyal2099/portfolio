@@ -1,11 +1,11 @@
-import { DownloadOutlined } from "@ant-design/icons";
-import { Button } from "antd";
+import { ArrowRightOutlined, DownloadOutlined } from "@ant-design/icons";
+import { Button, Tag } from "antd";
 import React from "react";
 import "./dashboard.css";
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <div id="aboutme" className="about-me" style={{ height: 500 }}>
+      <div id="aboutme" className="about-me">
         <div className="about-me-content">
           <div className="about-me-main-content">
             <h1>Hey, I'm Pallavi Goyal</h1>
@@ -33,8 +33,98 @@ const Dashboard = () => {
       <div id="skills" className="skills" style={{ height: 500 }}>
         <h3>Skills</h3>
       </div>
-      <div id="projects" className="projects" style={{ height: 500 }}>
-        <h3>Projects</h3>
+      <div id="projects" className="projects">
+        <h3 className="heading">Recent Projects</h3>
+        <section className="cards">
+          <article className="card card--1">
+            <div className="card__img">
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+            </div>
+
+            <div className="card__img--hover">
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+            </div>
+            <div className="card__info">
+              <span className="card__category">Angular</span>
+              <h3 className="card__title">GameKart</h3>
+              <h4 className="card__subtitle">
+                A platform to buy gaming consoles and it's accessories
+              </h4>
+
+              <span className="card__by">
+                <Button type="text" className="text-button">
+                  View <ArrowRightOutlined />
+                </Button>
+              </span>
+            </div>
+          </article>
+          <article className="card card--1">
+            <div className="card__img">
+              <img src={process.env.PUBLIC_URL + "/task.jpg"} alt="" />
+            </div>
+
+            <div className="card__img--hover">
+              <img src={process.env.PUBLIC_URL + "/task.jpg"} alt="" />
+            </div>
+            <div className="card__info">
+              <span className="card__category">React</span>
+              <h3 className="card__title">Task tracker</h3>
+              <h4 className="card__subtitle">
+                A platform to buy gaming consoles and it's accessories
+              </h4>
+
+              <span className="card__by">
+                <Button type="text" className="text-button">
+                  View <ArrowRightOutlined />
+                </Button>
+              </span>
+            </div>
+          </article>
+          <article className="card card--1">
+            <div className="card__img">
+              <img src={process.env.PUBLIC_URL + "/adopt.jpg"} alt="" />
+            </div>
+
+            <div className="card__img--hover">
+              <img src={process.env.PUBLIC_URL + "/adopt.jpg"} alt="" />
+            </div>
+            <div className="card__info">
+              <span className="card__category">Angular</span>
+              <h3 className="card__title">GameKart</h3>
+              <h4 className="card__subtitle">
+                A platform to buy gaming consoles and it's accessories
+              </h4>
+
+              <span className="card__by">
+                <Button type="text" className="text-button">
+                  View <ArrowRightOutlined />
+                </Button>
+              </span>
+            </div>
+          </article>
+          <article className="card card--1">
+            <div className="card__img">
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+            </div>
+
+            <div className="card__img--hover">
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+            </div>
+            <div className="card__info">
+              <span className="card__category">Angular</span>
+              <h3 className="card__title">GameKart</h3>
+              <h4 className="card__subtitle">
+                A platform to buy gaming consoles and it's accessories
+              </h4>
+
+              <span className="card__by">
+                <Button type="text" className="text-button">
+                  View <ArrowRightOutlined />
+                </Button>
+              </span>
+            </div>
+          </article>
+        </section>
       </div>
       <div id="contact" className="Contact" style={{ height: 500 }}>
         <h3>Contacts</h3>

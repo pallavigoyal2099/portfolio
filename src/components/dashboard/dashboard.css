@@ -12,6 +12,14 @@
   flex-direction: column;
   padding: 0 5rem;
 }
+.heading{
+  color: #ffecef;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
 .about-me-main-content h1 {
   color: #ffcaca;
 }
@@ -27,6 +35,15 @@
 .about-me-buttons {
   display: flex;
   padding: 1rem 0;
+}
+.text-button{
+  font-size: 1rem;
+  color: #251b37;
+  font-weight: bold;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5rem 0;
 }
 .default-button {
   background: transparent;
@@ -92,6 +109,117 @@
     hsla(267, 27%, 22%, 1) 0%,
     hsla(0, 100%, 90%, 1) 100%
   );
-
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#372948", endColorstr="#FFCACA", GradientType=1 );
 }
+.cards {
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 0 12%;
+align-content: center;
+}
+.card__subtitle{
+  font-size: 0.8rem;
+  margin: 0;
+}
+.card__img {
+visibility: hidden;
+background-repeat: no-repeat;
+height: 10rem;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+
+}
+.card__img img{
+height: 18rem;
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 1rem;
+width: 100%;
+opacity: 0;
+top: 0;
+}
+
+.card__img--hover {
+transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+position: absolute;
+  height: 10rem;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+top: 0;
+
+}
+.card__img--hover img{
+height: 10rem;
+width: 100%;
+}
+.card {
+transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+background-color: #ffecef;
+margin:1rem 1rem;
+position: relative;
+width: 14rem;
+border-radius: 1rem;
+overflow: hidden;
+box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+background-color: #ffecef;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+ padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.card__category {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+color: #868686;
+}
+
+.card__title {
+margin: 0.5rem 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+display: flex;
+justify-content: flex-end;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #251b37;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
+}
+
