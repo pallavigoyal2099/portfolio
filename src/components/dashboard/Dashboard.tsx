@@ -1,6 +1,11 @@
-import { ArrowRightOutlined, DownloadOutlined } from "@ant-design/icons";
-import { Button, Tag } from "antd";
+import {
+  ArrowRightOutlined,
+  DownloadOutlined,
+  StarFilled,
+} from "@ant-design/icons";
+import { Button } from "antd";
 import React from "react";
+import ContactMe from "../contactMe/ContactMe";
 import "./dashboard.css";
 const Dashboard = () => {
   return (
@@ -21,7 +26,7 @@ const Dashboard = () => {
                 Contact me
               </a>
               <Button type="primary" className="primary-button">
-                Resume <DownloadOutlined />
+                Resume
               </Button>
             </div>
           </div>
@@ -30,12 +35,173 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div id="skills" className="skills" style={{ height: 500 }}>
-        <h3>Skills</h3>
+      <div id="skills" className="skills">
+        <div className="section-title-pink">
+          <h2>S k i l l s</h2>
+          <div className="back-text-pink">Skills</div>
+        </div>
+        <div className="row">
+          <div className="container-skills">
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/html.jpeg"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/ang.png"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/react.jpeg"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/js.png"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/ts.png"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/css.jpeg"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/cpp.png"} />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="projects" className="projects">
-        <h3 className="heading">Recent Projects</h3>
-        <section className="cards">
+        {/* <h3 className="heading">Recent Projects</h3> */}
+        <div className="section-title">
+          <h2>P r o j e c t s</h2>
+          <div className="back-text">Projects</div>
+        </div>
+        <section className="cards row">
           <article className="card card--1">
             <div className="card__img">
               <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
@@ -126,8 +292,12 @@ const Dashboard = () => {
           </article>
         </section>
       </div>
-      <div id="contact" className="Contact" style={{ height: 500 }}>
-        <h3>Contacts</h3>
+      <div id="contact" className="skills">
+        <div className="section-title-pink">
+          <h2>C o n t a c t</h2>
+          <div className="back-text-pink">Contact</div>
+        </div>
+        <ContactMe />
       </div>
     </div>
   );

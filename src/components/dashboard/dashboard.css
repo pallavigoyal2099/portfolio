@@ -1,6 +1,9 @@
 .dashboard {
-  margin: 4rem 0;
+  margin: 4rem  0 0 0;
   background: #251b37;
+}
+.about-me{
+  height: 40rem;
 }
 .about-me-content {
   display: grid;
@@ -30,7 +33,7 @@
   padding: 1rem;
 }
 .about-me-image img {
-  height: 22rem;
+  height: 65vh;
 }
 .about-me-buttons {
   display: flex;
@@ -55,6 +58,8 @@
   margin-right: 1rem;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .primary-button {
   background-color: #ffcaca;
@@ -64,6 +69,9 @@
   cursor: pointer;
   border: 0;
   transition: all 0.3s ease-in;
+}
+.projects{
+  padding: 2rem;
 }
 .default-button:hover {
   background: hsla(267, 27%, 22%, 1);
@@ -223,3 +231,218 @@ justify-content: flex-end;
   opacity: 1;
 }
 
+.section-title{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 105px;
+  margin-bottom: 30px;
+  margin-top: -9px;
+}
+.section-title h2{
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ffcaca;
+  
+}
+.section-title .back-text{
+  position: absolute;
+  top: -48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  color:#ffecef ;
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 800;
+}
+.skills{
+  background: #ffcaca;
+  margin-top: 5rem;
+  padding: 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px inset;
+}
+.section-title-pink{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 105px;
+  /* margin-bottom: 30px; */
+  margin-top: -9px;
+}
+.section-title-pink h2{
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #251b37;
+  
+}
+.section-title-pink .back-text-pink{
+  position: absolute;
+  top: -48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  color:#372948 ;
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 800;
+}
+.design{
+  display: inline-block;
+
+}
+.single-portfolio-box{
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.single-portfolio-box img{
+  transition: .9s;
+}
+.single-portfolio-box .portfolio-content{
+  position: absolute;
+  left :0;
+  bottom: 20px;
+  padding: 25px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+.single-portfolio-box .portfolio-content h3{
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.single-portfolio-box .portfolio-content span{
+  display: block;
+  color: white;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.single-portfolio-box img:hover .portfolio-content{ 
+visibility: visible;
+}
+
+.container-skills {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container-skills .card-skills {
+	position: relative;
+	width: 15rem;
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+  background: #ffecef;
+}
+
+.container-skills .card-skills .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container-skills .card-skills:hover .content {
+	transform: translateY(-20px);
+}
+
+.container-skills .card-skills .content .imgBx {
+	position: relative;
+	width: 165px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container-skills .card-skills .content .imgBx img {
+	position: absolute;
+  border-radius: 15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container-skills .card-skills .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container-skills .card-skills .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container-skills .card-skills .sci {
+	position: absolute;
+	display: flex;
+  top: 5rem;
+  padding-left: 0;
+}
+
+.container-skills .card-skills .sci li {
+	list-style: none;
+	margin: 0 5px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container-skills .card-skills:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+.container-skills .card-skills:hover .sci li .anticon {
+	color: white;
+  padding: 0;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  .about-me-image{
+    display: none;
+  }
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  .section-title-pink .back-text-pink{
+    font-size: 60px;
+    top:-27px
+  }
+  .section-title .back-text{
+    font-size: 60px;
+    top:-27px
+  }
+}
