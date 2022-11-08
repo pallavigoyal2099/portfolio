@@ -27,7 +27,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="about-me-image">
-            <img src={process.env.PUBLIC_URL + "/girl.png"} />
+            <img src={process.env.PUBLIC_URL + "/girl.png"} alt="girl" />
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Dashboard = () => {
             <div className="card-skills">
               <div className="content">
                 <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/html.jpeg"} />
+                  <img src={process.env.PUBLIC_URL + "/html.jpeg"} alt="html" />
                 </div>
               </div>
               <ul className="sci">
@@ -65,7 +65,7 @@ const Dashboard = () => {
             <div className="card-skills">
               <div className="content">
                 <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/ang.png"} />
+                  <img src={process.env.PUBLIC_URL + "/ang.png"} alt="html" />
                 </div>
               </div>
               <ul className="sci">
@@ -83,73 +83,10 @@ const Dashboard = () => {
             <div className="card-skills">
               <div className="content">
                 <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/react.jpeg"} />
-                </div>
-              </div>
-              <ul className="sci">
-                <li>
-                  <StarFilled color="#ffffff" />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-              </ul>
-            </div>
-            <div className="card-skills">
-              <div className="content">
-                <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/js.png"} />
-                </div>
-              </div>
-              <ul className="sci">
-                <li>
-                  <StarFilled color="#ffffff" />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-              </ul>
-            </div>
-            <div className="card-skills">
-              <div className="content">
-                <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/ts.png"} />
-                </div>
-              </div>
-              <ul className="sci">
-                <li>
-                  <StarFilled color="#ffffff" />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-                <li>
-                  <StarFilled />
-                </li>
-              </ul>
-            </div>
-            <div className="card-skills">
-              <div className="content">
-                <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/css.jpeg"} />
+                  <img
+                    src={process.env.PUBLIC_URL + "/react.jpeg"}
+                    alt="html"
+                  />
                 </div>
               </div>
               <ul className="sci">
@@ -173,7 +110,73 @@ const Dashboard = () => {
             <div className="card-skills">
               <div className="content">
                 <div className="imgBx">
-                  <img src={process.env.PUBLIC_URL + "/cpp.png"} />
+                  <img src={process.env.PUBLIC_URL + "/js.png"} alt="html" />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/ts.png"} alt="html" />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/css.jpeg"} alt="html" />
+                </div>
+              </div>
+              <ul className="sci">
+                <li>
+                  <StarFilled color="#ffffff" />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+                <li>
+                  <StarFilled />
+                </li>
+              </ul>
+            </div>
+            <div className="card-skills">
+              <div className="content">
+                <div className="imgBx">
+                  <img src={process.env.PUBLIC_URL + "/cpp.png"} alt="html" />
                 </div>
               </div>
               <ul className="sci">
@@ -200,11 +203,11 @@ const Dashboard = () => {
         <section className="cards row">
           <article className="card card--1">
             <div className="card__img">
-              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="ecom" />
             </div>
 
             <div className="card__img--hover">
-              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="ecom" />
             </div>
             <div className="card__info">
               <span className="card__category">Angular</span>
@@ -222,11 +225,11 @@ const Dashboard = () => {
           </article>
           <article className="card card--1">
             <div className="card__img">
-              <img src={process.env.PUBLIC_URL + "/task.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/task.jpg"} alt="task" />
             </div>
 
             <div className="card__img--hover">
-              <img src={process.env.PUBLIC_URL + "/task.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/task.jpg"} alt="task" />
             </div>
             <div className="card__info">
               <span className="card__category">React</span>
@@ -244,11 +247,11 @@ const Dashboard = () => {
           </article>
           <article className="card card--1">
             <div className="card__img">
-              <img src={process.env.PUBLIC_URL + "/adopt.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/adopt.jpg"} alt="adopt" />
             </div>
 
             <div className="card__img--hover">
-              <img src={process.env.PUBLIC_URL + "/adopt.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/adopt.jpg"} alt="adopt" />
             </div>
             <div className="card__info">
               <span className="card__category">Angular</span>
@@ -266,11 +269,11 @@ const Dashboard = () => {
           </article>
           <article className="card card--1">
             <div className="card__img">
-              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="ecom" />
             </div>
 
             <div className="card__img--hover">
-              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="" />
+              <img src={process.env.PUBLIC_URL + "/ecom.jpg"} alt="ecom" />
             </div>
             <div className="card__info">
               <span className="card__category">Angular</span>

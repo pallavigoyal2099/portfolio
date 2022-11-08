@@ -9,7 +9,10 @@ const Navbar = () => {
   return (
     <nav className="navigation">
       <div className="brand-name">
-        <img src={process.env.PUBLIC_URL + "/portfolio-logo.png"} />
+        <img
+          src={process.env.PUBLIC_URL + "/portfolio-logo.png"}
+          alt="navbar"
+        />
       </div>
       <button
         className="hamburger"
