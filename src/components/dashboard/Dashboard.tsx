@@ -1,8 +1,4 @@
-import {
-  ArrowRightOutlined,
-  DownloadOutlined,
-  StarFilled,
-} from "@ant-design/icons";
+import { ArrowRightOutlined, StarFilled } from "@ant-design/icons";
 import { Button } from "antd";
 import React from "react";
 import ContactMe from "../contactMe/ContactMe";

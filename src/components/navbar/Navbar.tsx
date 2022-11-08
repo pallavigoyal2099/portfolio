@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import { Drawer, Button } from "antd";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import { AlignLeftOutlined } from "@ant-design/icons";
